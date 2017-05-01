@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="row">
+    
+     <font color="BLUE">
+      <h1 class="form-signin-heading" align="center"> YOUR PROFILE</h1></font>
+     <br>
+      <table>
+      <tr>
+      <td><b>
+       HELLO</b>
+       &nbsp;&nbsp;
+       {{currentUser.name}}
+     <br><br><br>
+       </td>
+      </tr>
+      <tr>
+      <td>
+      <b>
+       YOUR USERNAME IS -  &nbsp;&nbsp;</b>
+          {{currentUser.username}}
+           <br><br><br>
+          </td>
+          <td>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img data-ng-src="/image/{{currentUser.username}}" align="center" height="100px">
+      <a type='file' name='file' ngf-pattern='image/*' accept='image/*' ngf-select='setImage($file, $invalidFiles)'>
+                            Change picture
+                        </a>
+          </td>
+       
+</tr>
+<tr>
+<td>
+        <b>
+           YOUR EMAIL IS - &nbsp;&nbsp;</b>
+          {{currentUser.email}}
+        
+
+      </td>
+      </tr>
+      </table>
+    
+</div>
+  
+</div>
+
+
+
+

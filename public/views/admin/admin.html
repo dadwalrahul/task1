@@ -1,0 +1,24 @@
+<div ng-show="currentUser.roles.indexOf('admin') > -1">
+    <h1>USER'S LIST</h1>
+    <br><br>
+    <h3>Admin can delete the selected user</h3>
+    <br><br><br>    
+    <table class="table table-striped">
+        <tr>
+         <th>
+            <td>NAME</td>
+            <td>USERNAME</td>
+            <td>EMAIL</td>
+            <td>DELETE</td>
+            
+        </th>
+        </tr>
+        <tr ng-repeat="user in users">
+            <td>{{user._id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.email}}</td>
+            <td><button ng-click="remove(user)">X</button>
+        </tr>
+    </table>
+</div>
